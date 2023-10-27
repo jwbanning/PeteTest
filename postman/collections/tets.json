@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "6745c3b1-0451-44cb-949b-5078073777a3",
+		"name": "tets",
+		"description": "Buy or rent spacecrafts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "16913431-6745c3b1-0451-44cb-949b-5078073777a3"
+	},
+	"item": [
+		{
+			"name": "spacecrafts",
+			"item": [
+				{
+					"name": "{spacecraftId}",
+					"item": [
+						{
+							"name": "/spacecrafts/:spacecraftId",
+							"id": "99a0c7f5-52ed-467c-bf9f-8ef7693c9ab9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId2=elit culpa&hello=elit culpa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"spacecrafts",
+										":spacecraftId"
+									],
+									"query": [
+										{
+											"description": "(Required) The unique identifier of the spacecraft",
+											"key": "spacecraftId2",
+											"value": "elit culpa"
+										},
+										{
+											"description": "(Required) The unique identifier of the spacecraft",
+											"key": "hello",
+											"value": "elit culpa"
+										}
+									],
+									"variable": [
+										{
+											"key": "spacecraftId",
+											"value": "elit culpa"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "bc126289-4c52-419a-89db-96d52b0a8c94",
+									"name": "The spacecraft corresponding to the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId2=elit culpa&hello=elit culpa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "spacecraftId2",
+													"value": "elit culpa"
+												},
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "hello",
+													"value": "elit culpa"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"incididunt labore\",\n  \"name\": \"dolor cupidatat sunt\",\n  \"type\": \"probe\",\n  \"description\": \"ullamco anim cupidatat aute laborum\"\n}"
+								},
+								{
+									"id": "6e6999d7-75dc-4f57-b9f0-e959d6ad68dc",
+									"name": "No spacecraft found for the provided `spacecraftId`",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId2=elit culpa&hello=elit culpa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "spacecraftId2",
+													"value": "elit culpa"
+												},
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "hello",
+													"value": "elit culpa"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"non Lorem\"\n}"
+								},
+								{
+									"id": "dd1f24de-3162-4017-a438-988e4ef093eb",
+									"name": "Unexpected error",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?spacecraftId2=elit culpa&hello=elit culpa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"spacecrafts",
+												":spacecraftId"
+											],
+											"query": [
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "spacecraftId2",
+													"value": "elit culpa"
+												},
+												{
+													"description": "(Required) The unique identifier of the spacecraft",
+													"key": "hello",
+													"value": "elit culpa"
+												}
+											],
+											"variable": [
+												{
+													"key": "spacecraftId"
+												}
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"message\": \"non Lorem\"\n}"
+								}
+							]
+						}
+					],
+					"id": "1cd3de51-43b1-4998-9b75-b102a7965262"
+				}
+			],
+			"id": "fbdbcca3-f210-4f71-8343-135c50225419"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "32750739-d9c0-41c7-9b0b-bdaeaef17d30",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
